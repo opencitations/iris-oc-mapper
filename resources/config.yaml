@@ -1,0 +1,85 @@
+iris:
+  # Core data extraction:
+  core_columns:
+    ODS_L1_IR_ITEM_MASTER_ALL.csv: ALL
+    ODS_L1_IR_ITEM_IDENTIFIER.csv:
+      - IDE_DOI
+      - IDE_ISBN
+      - IDE_PMID
+
+  # Metadata extraction:
+  # These tables and columns will be joined to the core tables as metadata for deduplication.
+  metadata_columns:
+    ODS_L1_IR_ITEM_DESCRIPTION.csv: ALL
+    ODS_L1_IR_ITEM_PUBLISHER.csv:
+      - PUB_NAME
+      - PUB_PLACE
+      - PUB_COUNTRY
+    ODS_L1_IR_ITEM_LANGUAGE.csv:
+      - LAN_ISO
+    ODS_L1_IR_ITEM_RELATION.csv:
+      - REL_ISPARTOFBOOK
+      - REL_ISPARTOFJOURNAL
+
+  type_validation_column: MIUR_TYPE_CODE
+
+  # PID type validation rules:
+  pid_type_validation:
+    # Mapping of PID types to valid MIUR type codes.
+    # An ISBN is considered valid only if associated with a record having one of these types.
+    isbn:
+      valid_types: [276, 277, 280, 281, 282, 283, 284]
+
+  miur_types:
+    262: "Articolo in rivista"
+    263: "Recensione in rivista"
+    264: "Scheda bibliografica"
+    265: "Nota a sentenza"
+    266: "Abstract in rivista"
+    267: "Traduzione in rivista"
+    268: "Contributo in volume (Capitolo o Saggio)"
+    269: "Prefazione/Postfazione"
+    270: "Breve introduzione"
+    271: "Voce (in dizionario o enciclopedia)"
+    272: "Traduzione in volume"
+    273: "Contributo in Atti di convegno"
+    274: "Abstract in Atti di convegno"
+    275: "Poster"
+    276: "Monografia o trattato scientifico"
+    277: "Concordanza"
+    278: "Indice"
+    279: "Bibliografia"
+    280: "Edizione critica di testi/di scavo"
+    281: "Pubblicazione di fonti inedite"
+    282: "Commento scientifico"
+    283: "Traduzione di libro"
+    284: "Curatela"
+    285: "Brevetto"
+    286: "Composizione"
+    287: "Disegno"
+    288: "Design"
+    289: "Performance"
+    290: "Esposizione"
+    291: "Mostra"
+    292: "Manufatto"
+    293: "Prototipo d'arte e relativi progetti"
+    294: "Cartografia"
+    295: "Banca dati"
+    296: "Software"
+    298: "Altro"
+    301: "Recensione in volume"
+    302: "Schede di catalogo/repertorio o corpus"
+    1337: "Progetto Architettonico"
+
+oc_meta:
+  # Total number of files in the dump
+  # (for estimation of the progress bar)
+  n_records: 38601
+
+  # Number of records to process in each batch
+  # (affects memory usage and speed, pick ~100 for 16GB RAM and ~200 for 32GB RAM)
+  batch_size: 200
+
+
+oc_index:
+  max_workers: 2  # Number of parallel workers for OC Index processing

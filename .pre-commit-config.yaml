@@ -1,0 +1,46 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: check-yaml
+      - id: check-toml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: check-added-large-files
+  - repo: https://github.com/pycqa/isort
+    rev: 5.13.2
+    hooks:
+      - id: isort
+        args: ["--profile", "black", "--filter-files"]
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.5.0
+    hooks:
+      - id: detect-secrets
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.14.1
+    hooks:
+      - id: ruff-check
+        types_or: [ python, pyi ]
+        args: [ --fix , --line-length=120 ]
+      - id: ruff-format
+        types_or: [ python, pyi ]
+        args: [ --line-length=120 ]
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.18.2
+    hooks:
+      - id: mypy
+        args: [ --ignore-missing-imports , --disable-error-code=attr-defined ]
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.4.1
+    hooks:
+    - id: codespell
+      exclude: resources/
+  - repo: https://github.com/fredrikaverpil/creosote
+    rev: v4.1.0
+    hooks:
+      - id: creosote
+        args:
+          - '--venv=.venv'
+          - '--path=src'
+          - '--deps-file=pyproject.toml'
+          - '--section=project.dependencies'

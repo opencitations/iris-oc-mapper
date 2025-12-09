@@ -1,0 +1,67 @@
+IRIS_TYPE_NAME,MIUR_TYPE_NAME
+01A-Monografia,Monografia o trattato scientifico
+01B-Edizione di scavo,Monografia o trattato scientifico
+01C-Concordanza,Concordanza
+01D-Indice,Indice
+01E-Bibliografia,Bibliografia
+01F-Edizione critica,Edizione critica di testi/di scavo
+01G-Pubblic. fonti inedite,Edizione critica di testi/di scavo
+01H-Commento scient./Ediz. comment.,Commento scientifico
+01I-Traduzione di libro,Traduzione di libro
+01L-Repertorio lessicale,Monografia o trattato scientifico
+01M-Catalogo,Monografia o trattato scientifico
+01N-Manuale universitario,Monografia o trattato scientifico
+01O-Opuscolo/Breve monografia,Altro
+01P-Guida a carattere scientifico,Altro
+02A-Contributo in volume,Contributo in volume (Capitolo o Saggio)
+02B-Commentario breve legge,Contributo in volume (Capitolo o Saggio)
+02C-Cap. in manuale universitario,Contributo in volume (Capitolo o Saggio)
+02D-Voce di enciclopedia o dizionario,Voce (in dizionario o enciclopedia)
+02E-Prefazione/Postfazione,Prefazione/Postfazione
+02F-Introduzione,Contributo in volume (Capitolo o Saggio)
+02G-Breve introduzione,Breve introduzione
+02H-Traduzione in volume,Traduzione in volume
+02I-Recensione in volume,Recensione in volume
+02L-Scheda bibliografica in volume,Altro
+02M-Schede di catalogo,Schede di catalogo/repertorio o corpus
+02N-Scheda breve di catalogo,Schede di catalogo/repertorio o corpus
+02O-Bibliografia in volume,Bibliografia
+03A-Articolo su Rivista,Articolo in rivista
+03B-Review in Rivista / Rassegna della Lett. in Riv. / Nota Critica,Articolo in rivista
+03C-Nota a Sentenza,Nota a sentenza
+03D-Recensione in Rivista,Recensione in rivista
+03E-Scheda bibliografica in rivista,Scheda bibliografica
+03F-Traduzione in Rivista,Traduzione in rivista
+03G-Abstract in Rivista,Abstract in rivista
+04A-Conference paper in volume,Contributo in Atti di convegno
+04B-Conference paper in rivista,Contributo in Atti di convegno
+04C-Slides / Presentazione a convegno,Contributo in Atti di convegno
+04D-Meeting abstract in volume,Abstract in Atti di convegno
+04E-Meeting abstract in rivista,Abstract in Atti di convegno
+04F-Poster,Poster
+05A-Curatela,Curatela
+06A-Brevetto,Brevetto
+07A-Composizione,Composizione
+07B-Disegno,Disegno
+07C-Design,Design
+07D-Performance,Performance
+07E-Esposizione,Esposizione
+07F-Mostra,Mostra
+07G-Manufatto,Manufatto
+07H-Prototipo d'Arte e Relativi Progetti,Prototipo d'arte e relativi progetti
+07I-Cartografia,Cartografia
+07L-Banca Dati,Banca dati
+07M-Software,Software
+07N-Prodotto Multimediale,Altro
+07O-Rapporto tecnico/Rapporto di Ricerca,Altro
+07P-Working Paper,Altro
+07Q-Dataset,Altro
+07R-Tesi di Dottorato,Altro
+07S-Sito Web,Altro
+07T-Pre-Print,Altro
+07U-Manuale/Eserciziario,Altro
+07V-Registrazione o Video Etnografico,Altro
+07Y-Articolo in Rivista non scientifica,Altro
+07Z-Altro,Altro
+07W-Progetto architettonico,Progetto Architettonico
+ex-Prodotti AperTO,Altro

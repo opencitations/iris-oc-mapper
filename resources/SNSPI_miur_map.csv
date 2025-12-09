@@ -1,0 +1,50 @@
+IRIS_TYPE_NAME,MIUR_TYPE_NAME
+1.1 Articolo in rivista,Articolo in rivista
+1.2 Recensione in rivista,Recensione in rivista
+1.3 Scheda bibliografica,Scheda bibliografica
+1.4 Nota a sentenza,Nota a sentenza
+1.5 Abstract in rivista,Abstract in rivista
+1.6 Traduzione in rivista,Traduzione in rivista
+2.1 Contributo in volume (Capitolo o Saggio),Contributo in volume (Capitolo o Saggio)
+2.2 Prefazione/Postfazione,Prefazione/Postfazione
+2.3 Breve introduzione,Breve introduzione
+2.4 Voce (in dizionario o enciclopedia),Voce (in dizionario o enciclopedia)
+2.5 Traduzione in volume,Traduzione in volume
+2.6 Recensione in volume,Recensione in volume
+"2.7 Scheda di catalogo",Schede di catalogo/repertorio o corpus
+2.8 Scheda bibliografica in volume,Scheda bibliografica
+2.9 Bibliografia in volume,Bibliografia
+3.1 Monografia o trattato scientifico,Monografia o trattato scientifico
+3.2 Concordanza,Concordanza
+3.3 Indice,Indice
+3.4 Bibliografia,Bibliografia
+3.5 Edizione critica,Edizione critica di testi/di scavo
+3.6 Pubblicazione di fonti inedite,Pubblicazione di fonti inedite
+3.7 Commento scientifico,Commento scientifico
+3.8 Traduzione di libro,Traduzione di libro
+4.1 Contributo in Atti di convegno,Contributo in Atti di convegno
+4.2 Abstract in Atti di convegno,Abstract in Atti di convegno
+4.3 Poster,Poster
+5.01 Composizione,Composizione
+5.02 Disegno,Disegno
+5.3 Design,Design
+5.04 Performance,Performance
+5.05 Esposizione,Esposizione
+5.06 Mostra,Mostra
+5.7 Manufatto,Manufatto
+5.08 Prototipo d'arte e relativi progetti,Prototipo d'arte e relativi progetti
+5.9 Cartografia,Cartografia
+5.10 Banca dati,Banca dati
+5.11 Software,Software
+5.12 Altro,Altro
+6.1 Brevetto,Brevetto
+7.1 Curatela,Curatela
+8.1 Chairman di Sessioni di Convegni Internazionali,Altro
+8.2 Comunicazioni a Convegni o Seminari,Altro
+8.3 Conv. e contr. di ricerca di Enti Pubblici/Privati,Altro
+8.4 Convegni organizzati dalla struttura,Altro
+8.5 Partecip. Consigli Scientifici/Direttivi,Altro
+8.6 Partecip. Editorial Board di riviste scientifiche,Altro
+8.7 Progetti di Ricerca Finanziati,Altro
+8.9 Seminari tenuti presso l'Ateneo,Altro
+9.1 Tesi PhD,Altro

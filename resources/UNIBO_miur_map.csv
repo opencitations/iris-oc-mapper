@@ -1,0 +1,50 @@
+IRIS_TYPE_NAME,MIUR_TYPE_NAME
+1.01 Articolo in rivista,Articolo in rivista
+1.02 Nota a sentenza,Nota a sentenza
+1.03 Recensione in rivista,Recensione in rivista
+1.04 Replica / breve intervento (e simili),Articolo in rivista
+1.05 Scheda bibliografica,Scheda bibliografica
+1.06 Abstract in rivista,Abstract in rivista
+2.01 Capitolo / saggio in libro,Contributo in volume (Capitolo o Saggio)
+2.02 Prefazione,Prefazione/Postfazione
+2.03 Postfazione,Prefazione/Postfazione
+2.04 Breve introduzione,Breve introduzione
+2.05 Voce in dizionario o enciclopedia,Voce (in dizionario o enciclopedia)
+2.06 Commento giuridico,Contributo in volume (Capitolo o Saggio)
+2.07 Scheda di catalogo,Schede di catalogo/repertorio o corpus
+2.08 Recensione in volume,Recensione in volume
+3.01 Monografia / trattato scientifico in forma di libro,Monografia o trattato scientifico
+3.02 Curatela,Curatela
+3.03 Edizione critica,Edizione critica di testi/di scavo
+3.04 Pubblicazione di fonti inedite,Pubblicazione di fonti inedite
+3.05 Concordanze,Concordanza
+3.06 Indice,Indice
+3.07 Bibliografia,Bibliografia
+3.08 Edizione annotata/scolastica,Commento scientifico
+4.01 Contributo in Atti di convegno,Contributo in Atti di convegno
+4.02 Riassunto (Abstract),Abstract in Atti di convegno
+4.03 Poster,Poster
+5.01 Libro (Traduzione),Traduzione di libro
+5.02 Contributo in volume (Traduzione),Traduzione in volume
+5.03 Contributo in rivista (Traduzione),Traduzione in rivista
+"5.04 Traduzione di prodotti multimediali, teatrali, televisivi [...]",Altro
+6.01 Brevetto,Brevetto
+7.01 Carta tematica e geografica,Cartografia
+7.02 Carta geologica,Cartografia
+7.03 Prodotto dell’ingegneria civile e dell’architettura,Progetto Architettonico
+7.04 Software,Software
+7.05 Banche dati,Banca dati
+7.06 Prodotto artistico e spettacolare: Composizione musicale,Composizione
+7.07 Prodotto artistico e spettacolare: Disegno,Disegno
+7.08 Prodotto artistico e spettacolare: Design,Design
+7.09 Prodotto artistico e spettacolare: Performance,Performance
+7.10 Prodotto artistico e spettacolare: Manufatto,Manufatto
+7.11 Prodotto artistico e spettacolare: Prototipo d'arte e relativi progetti,Prototipo d'arte e relativi progetti
+7.12 Attività espositiva:Mostra o Esposizione,Esposizione
+7.13 Rapporto tecnico,Altro
+7.14 Audiovisivi,Altro
+7.15 Test psicologici,Altro
+8.01 Ruolo editoriale in rivista,Altro
+8.02 Ruolo editoriale in collana,Altro
+8.03 Direzione di scavi archeologici,Altro
+8.04 Coordinamento di progetti di ricerca,Altro

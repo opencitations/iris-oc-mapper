@@ -1,0 +1,212 @@
+IRIS_TYPE_NAME,MIUR_TYPE_NAME
+Articolo,Articolo in rivista
+01 - Articolo su periodico,Articolo in rivista
+01 - Articolo su periodico; Abstract in rivista,Abstract in rivista
+01 - Articolo su periodico; Articolo,Articolo in rivista
+01 - Articolo su periodico; Articolo in rivista,Articolo in rivista
+01 - Articolo su periodico; Capitolo o Saggio,Articolo in rivista
+01 - Articolo su periodico; Case Reports,Articolo in rivista
+01 - Articolo su periodico; Clinical Trial,Articolo in rivista
+01 - Articolo su periodico; Comment,Articolo in rivista
+01 - Articolo su periodico; Comparative Study,Articolo in rivista
+01 - Articolo su periodico; Consensus Development Conference,Articolo in rivista
+"01 - Articolo su periodico; Contributo a forum/dibattito, Introduzione",Articolo in rivista
+01 - Articolo su periodico; Duplicate Publication,Articolo in rivista
+01 - Articolo su periodico; Editorial,Articolo in rivista
+01 - Articolo su periodico; English Abstract,Abstract in rivista
+01 - Articolo su periodico; Evaluation Studies,Articolo in rivista
+01 - Articolo su periodico; In Vitro,Articolo in rivista
+01 - Articolo su periodico; Indice,Indice
+01 - Articolo su periodico; Intervento a convegno,Articolo in rivista
+01 - Articolo su periodico; Introduzione,Breve introduzione
+01 - Articolo su periodico; JOURNAL ARTICLE,Articolo in rivista
+01 - Articolo su periodico; Journal Article,Articolo in rivista
+01 - Articolo su periodico; Letter,Articolo in rivista
+01 - Articolo su periodico; Lettera,Articolo in rivista
+01 - Articolo su periodico; Linee guida,Articolo in rivista
+01 - Articolo su periodico; Monografia,Articolo in rivista
+01 - Articolo su periodico; Nota a sentenza,Nota a sentenza
+01 - Articolo su periodico; Nota o Commento,Nota a sentenza
+01 - Articolo su periodico; Poster,Poster
+01 - Articolo su periodico; Presentazione,Articolo in rivista
+01 - Articolo su periodico; Recensione,Recensione in rivista
+01 - Articolo su periodico; Recensione in rivista,Recensione in rivista
+01 - Articolo su periodico; Review essay,Recensione in rivista
+01 - Articolo su periodico; Riassunto di intervento a convegno,Articolo in rivista
+01 - Articolo su periodico; Scheda bibliografica,Scheda bibliografica
+02 - Traduzione di articolo su periodico,Traduzione in rivista
+02 - Traduzione di articolo su periodico; Articolo,Traduzione in rivista
+02 - Traduzione di articolo su periodico; Intervento a convegno,Traduzione in rivista
+02 - Traduzione di articolo su periodico; Lettera,Traduzione in rivista
+02 - Traduzione di articolo su periodico; Nota o Commento,Traduzione in rivista
+02 - Traduzione di articolo su periodico; Poster,Traduzione in rivista
+02 - Traduzione di articolo su periodico; Recensione,Traduzione in rivista
+02 - Traduzione di articolo su periodico; Review essay,Traduzione in rivista
+02 - Traduzione di articolo su periodico; Riassunto di intervento a convegno,Traduzione in rivista
+02 - Traduzione di articolo su periodico; Traduzione in rivista,Traduzione in rivista
+03 - Contributo in volume,Contributo in volume (Capitolo o Saggio)
+03 - Contributo in volume; Articolo,Contributo in volume (Capitolo o Saggio)
+03 - Contributo in volume; Breve introduzione,Breve introduzione
+03 - Contributo in volume; Capitolo di libro,Contributo in volume (Capitolo o Saggio)
+03 - Contributo in volume; Capitolo o Saggio,Contributo in volume (Capitolo o Saggio)
+03 - Contributo in volume; Contributo in volume (Capitolo o Saggio),Contributo in volume (Capitolo o Saggio)
+03 - Contributo in volume; Indice,Indice
+03 - Contributo in volume; Intervento a convegno,Contributo in Atti di convegno
+03 - Contributo in volume; Introduzione,Breve introduzione
+03 - Contributo in volume; Monografia,Contributo in volume (Capitolo o Saggio)
+03 - Contributo in volume; Nota a sentenza,Nota a sentenza
+03 - Contributo in volume; Nota o Commento,Nota a sentenza
+03 - Contributo in volume; Poster,Poster
+03 - Contributo in volume; Postfazione,Prefazione/Postfazione
+03 - Contributo in volume; Prefazione,Prefazione/Postfazione
+03 - Contributo in volume; Prefazione/Postfazione,Prefazione/Postfazione
+03 - Contributo in volume; Presentazione,Contributo in volume (Capitolo o Saggio)
+03 - Contributo in volume; Recensione,Contributo in volume (Capitolo o Saggio)
+03 - Contributo in volume; Riassunto di intervento a convegno,Abstract in Atti di convegno
+03 - Contributo in volume; Scheda di catalogo,Schede di catalogo/repertorio o corpus
+"03 - Contributo in volume; Schede di catalogo, repertorio o corpus",Schede di catalogo/repertorio o corpus
+03 - Contributo in volume; Voce (in dizionario o enciclopedia),Voce (in dizionario o enciclopedia)
+04 - Traduzione di contributo in volume,Traduzione in volume
+04 - Traduzione di contributo in volume; Articolo,Traduzione in volume
+04 - Traduzione di contributo in volume; Capitolo o Saggio,Traduzione in volume
+04 - Traduzione di contributo in volume; Intervento a convegno,Traduzione in volume
+04 - Traduzione di contributo in volume; Introduzione,Traduzione in volume
+04 - Traduzione di contributo in volume; Nota o Commento,Traduzione in volume
+04 - Traduzione di contributo in volume; Poster,Traduzione in volume
+04 - Traduzione di contributo in volume; Postfazione,Traduzione in volume
+04 - Traduzione di contributo in volume; Prefazione,Traduzione in volume
+04 - Traduzione di contributo in volume; Scheda di catalogo,Traduzione in volume
+04 - Traduzione di contributo in volume; Traduzione in volume,Traduzione in volume
+04 - Traduzione di contributo in volume; Voce (in dizionario o enciclopedia),Traduzione in volume
+05 - Volume,Monografia o trattato scientifico
+05 - Volume; Altra bibliografia,Monografia o trattato scientifico
+05 - Volume; Altro,Monografia o trattato scientifico
+05 - Volume; Antologia,Monografia o trattato scientifico
+05 - Volume; Articolo,Monografia o trattato scientifico
+05 - Volume; Bibliografia critica o ragionata,Bibliografia
+05 - Volume; Catalogo,Monografia o trattato scientifico
+05 - Volume; Concordanza,Concordanza
+05 - Volume; Edizione critica di testi/di scavo,Edizione critica di testi/di scavo
+05 - Volume; Indice,Indice
+05 - Volume; Libro di testo,Monografia o trattato scientifico
+05 - Volume; Linee guida,Monografia o trattato scientifico
+05 - Volume; Manuale,Monografia o trattato scientifico
+05 - Volume; Monografia,Monografia o trattato scientifico
+05 - Volume; Monografia o trattato scientifico,Monografia o trattato scientifico
+05 - Volume; Opera di riferimento,Monografia o trattato scientifico
+06 - Curatela di volume,Curatela
+06 - Curatela di volume; Altra bibliografia,Curatela
+06 - Curatela di volume; Altro,Curatela
+06 - Curatela di volume; Antologia,Curatela
+06 - Curatela di volume; Atti di convegno,Curatela
+06 - Curatela di volume; Bibliografia critica o ragionata,Curatela
+06 - Curatela di volume; Catalogo,Curatela
+06 - Curatela di volume; Curatela,Curatela
+06 - Curatela di volume; Indice,Indice
+06 - Curatela di volume; Libro di testo,Curatela
+06 - Curatela di volume; Linee guida,Curatela
+06 - Curatela di volume; Manuale,Curatela
+06 - Curatela di volume; Monografia,Curatela
+06 - Curatela di volume; Opera di riferimento,Curatela
+07 - Traduzione di volume,Traduzione di libro
+07 - Traduzione di volume; Altro,Traduzione di libro
+07 - Traduzione di volume; Antologia,Traduzione di libro
+07 - Traduzione di volume; Capitolo o Saggio,Traduzione di libro
+07 - Traduzione di volume; Catalogo,Traduzione di libro
+07 - Traduzione di volume; Libro di testo,Traduzione di libro
+07 - Traduzione di volume; Linee guida,Traduzione di libro
+07 - Traduzione di volume; Manuale,Traduzione di libro
+07 - Traduzione di volume; Monografia,Traduzione di libro
+07 - Traduzione di volume; Opera di riferimento,Traduzione di libro
+07 - Traduzione di volume; Traduzione con commento,Traduzione di libro
+07 - Traduzione di volume; Traduzione di libro,Traduzione di libro
+08 - Relazione interna o rapporto di ricerca,Altro
+08 - Relazione interna o rapporto di ricerca; Altro,Altro
+08 - Relazione interna o rapporto di ricerca; Altro; Text,Altro
+08 - Relazione interna o rapporto di ricerca; Monografia,Altro
+08 - Relazione interna o rapporto di ricerca; Presentazione,Altro
+"09 - Brevetto, privativa o norma",Brevetto
+10 - Mappa,Cartografia
+10 - Mappa; Cartografia,Cartografia
+11 - Applicazione o prodotto multimediale,Altro
+11 - Applicazione o prodotto multimediale; Altro,Altro
+11 - Applicazione o prodotto multimediale; Altro; Dataset,Altro
+11 - Applicazione o prodotto multimediale; Altro; Interactive Resource,Altro
+11 - Applicazione o prodotto multimediale; Altro; Text,Altro
+11 - Applicazione o prodotto multimediale; Collection,Altro
+11 - Applicazione o prodotto multimediale; Dataset,Banca dati
+11 - Applicazione o prodotto multimediale; Event,Altro
+11 - Applicazione o prodotto multimediale; Image,Altro
+11 - Applicazione o prodotto multimediale; Interactive Resource,Altro
+11 - Applicazione o prodotto multimediale; InteractiveResources,Altro
+11 - Applicazione o prodotto multimediale; Libro di testo,Altro
+11 - Applicazione o prodotto multimediale; Moving Image,Altro
+11 - Applicazione o prodotto multimediale; MovingImage,Altro
+11 - Applicazione o prodotto multimediale; Physical Object,Altro
+11 - Applicazione o prodotto multimediale; Service,Altro
+11 - Applicazione o prodotto multimediale; Software,Software
+11 - Applicazione o prodotto multimediale; Software; Collection,Altro
+11 - Applicazione o prodotto multimediale; Software; Interactive Resource,Altro
+11 - Applicazione o prodotto multimediale; Sound,Altro
+11 - Applicazione o prodotto multimediale; StillImage,Altro
+11 - Applicazione o prodotto multimediale; Text,Altro
+12 - Curatela di applicazione o prodotto multimediale,Curatela
+12 - Curatela di applicazione o prodotto multimediale; Collection,Curatela
+12 - Curatela di applicazione o prodotto multimediale; Dataset,Curatela
+12 - Curatela di applicazione o prodotto multimediale; Event,Curatela
+12 - Curatela di applicazione o prodotto multimediale; Image,Curatela
+12 - Curatela di applicazione o prodotto multimediale; Interactive Resource,Curatela
+12 - Curatela di applicazione o prodotto multimediale; Moving Image,Curatela
+12 - Curatela di applicazione o prodotto multimediale; Physical Object,Curatela
+12 - Curatela di applicazione o prodotto multimediale; Service,Curatela
+12 - Curatela di applicazione o prodotto multimediale; Text,Curatela
+13 - Tesi di dottorato discussa entro ottobre 2010,Altro
+14 - Intervento a convegno non pubblicato,Altro
+14 - Intervento a convegno non pubblicato; Articolo,Altro
+14 - Intervento a convegno non pubblicato; Intervento a convegno,Altro
+14 - Intervento a convegno non pubblicato; Poster,Altro
+14 - Intervento a convegno non pubblicato; Presentazione,Altro
+14 - Intervento a convegno non pubblicato; Presentazione breve,Altro
+14 - Intervento a convegno non pubblicato; Riassunto di intervento a convegno,Altro
+15 - Attività,Altro
+15 - Attività; Presentazione,Altro
+"16 - Edizione critica, edizione o traduzione commentata, commento scientifico",Edizione critica di testi/di scavo
+"16 - Edizione critica, edizione o traduzione commentata, commento scientifico; Capitolo di libro",Edizione critica di testi/di scavo
+"16 - Edizione critica, edizione o traduzione commentata, commento scientifico; Commento scientifico",Commento scientifico
+"16 - Edizione critica, edizione o traduzione commentata, commento scientifico; Edizione commentata",Edizione critica di testi/di scavo
+"16 - Edizione critica, edizione o traduzione commentata, commento scientifico; Edizione critica",Edizione critica di testi/di scavo
+"16 - Edizione critica, edizione o traduzione commentata, commento scientifico; Edizione critica di testi/di scavo",Edizione critica di testi/di scavo
+"16 - Edizione critica, edizione o traduzione commentata, commento scientifico; Edizione di scavo",Edizione critica di testi/di scavo
+"16 - Edizione critica, edizione o traduzione commentata, commento scientifico; Pubblicazione di fonti inedite con introduzione e/o commento",Edizione critica di testi/di scavo
+"16 - Edizione critica, edizione o traduzione commentata, commento scientifico; Pubblicazione di fonti inedite senza introduzione né commento",Edizione critica di testi/di scavo
+"16 - Edizione critica, edizione o traduzione commentata, commento scientifico; Traduzione con commento",Traduzione di libro
+17 - Curatela di numero monografico di rivista,Curatela
+17 - Curatela di numero monografico di rivista; Altro,Curatela
+17 - Curatela di numero monografico di rivista; Nota o Commento,Curatela
+18 - Protocollo,Altro
+19 - Curatela di protocollo,Curatela
+20 - Mostra,Mostra
+20 - Mostra; Mostra,Mostra
+21 - Sezione di mostra,Mostra
+22 - Dataset,Banca dati
+22 - Dataset; Audiovisual,Banca dati
+22 - Dataset; Dataset,Banca dati
+22 - Dataset; Image,Banca dati
+22 - Dataset; Model,Banca dati
+22 - Dataset; Other,Banca dati
+22 - Dataset; Sound,Banca dati
+22 - Dataset; Text,Banca dati
+23 - Pubblicazione su portale,Altro
+23 - Pubblicazione su portale; Altro,Altro
+23 - Pubblicazione su portale; Articolo,Altro
+23 - Pubblicazione su portale; Commento scientifico,Altro
+23 - Pubblicazione su portale; Intervento a convegno,Altro
+23 - Pubblicazione su portale; Nota a sentenza,Altro
+23 - Pubblicazione su portale; Nota o Commento,Altro
+23 - Pubblicazione su portale; Recensione,Altro
+23 - Pubblicazione su portale; Voce (in dizionario o enciclopedia),Altro
+24 - Pre-print,Altro
+24 - Pre-print; Altro,Altro
+25 - Preregistrazione,Altro
+Tesi di dottorato,Altro
+Tesi di specializzazione,Altro

@@ -1,0 +1,42 @@
+IRIS_TYPE_NAME,MIUR_TYPE_NAME
+1.1 Articolo in rivista,Articolo in rivista
+1.2 Recensione in rivista,Recensione in rivista
+1.3 Scheda bibliografica,Scheda bibliografica
+1.4 Nota a sentenza,Nota a sentenza
+1.5 Abstract in rivista,Abstract in rivista
+1.6 Traduzione in rivista,Traduzione in rivista
+2.1 Contributo in volume (Capitolo o Saggio),Contributo in volume (Capitolo o Saggio)
+2.2 Prefazione/Postfazione,Prefazione/Postfazione
+2.3 Breve introduzione,Breve introduzione
+2.4 Voce (in dizionario o enciclopedia),Voce (in dizionario o enciclopedia)
+2.5 Traduzione in volume,Traduzione in volume
+2.6 Recensione in volume,Recensione in volume
+"2.7 Schede di catalogo, repertorio o corpus",Schede di catalogo/repertorio o corpus
+3.1 Monografia o trattato scientifico,Monografia o trattato scientifico
+3.2 Concordanza,Concordanza
+3.3 Indice,Indice
+3.4 Bibliografia,Bibliografia
+3.5 Edizione critica di testi/Edizione critica di scavo,Edizione critica di testi/di scavo
+3.6 Pubblicazione di fonti inedite,Pubblicazione di fonti inedite
+3.7 Commento scientifico,Commento scientifico
+3.8 Traduzione di libro,Traduzione di libro
+4.1 Contributo in Atti di convegno,Contributo in Atti di convegno
+4.2 Abstract in Atti di convegno,Abstract in Atti di convegno
+4.3 Poster,Poster
+5.01 Composizione,Altro
+5.04 Performance,Performance
+5.05 Esposizione,Esposizione
+5.06 Mostra,Mostra
+5.09 Cartografia,Cartografia
+5.10 Banca dati,Banca dati
+5.11 Software,Software
+5.12 Tesi Dottorato(no Miur),Altro
+5.13 Tesi dottorato NON UPO,Altro
+5.13 Altro,Altro
+5.14 Altro,Altro
+5.15 Progetto architettonico,Progetto Architettonico
+5.15 Working Papers,Altro
+5.16 Working Papers,Altro
+5.17 Intervento a Convegno non pubblicato,Altro
+6.1 Brevetto,Brevetto
+7.1 Curatela,Curatela

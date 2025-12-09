@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>IRIS ↔ OC Mapping Report</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  body { font-family: 'Roboto', sans-serif; margin: 20px; background: #f9f9f9; color: #333; }
+  h1, h2, h3 { color: #2c3e50; }
+  h1 { font-size: 2em; margin-bottom: 0.5em; }
+  h2 { margin-top: 1.5em; margin-bottom: 0.5em; }
+  h3 { margin-top: 1em; margin-bottom: 0.3em; font-weight: 500; }
+  .section { background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); margin-bottom: 30px; }
+  .stats { display: flex; flex-wrap: wrap; gap: 15px; margin-top: 10px; }
+  .stat-card { flex: 1; min-width: 150px; background: #f4f4f4; border-radius: 10px; padding: 15px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05);}
+  .stat-card .value { font-size: 1.5em; font-weight: bold; margin-bottom: 5px; }
+  .table-container { max-height: 400px; overflow-y: auto; border: 1px solid #ddd; border-radius: 8px;}
+  .table-container table {margin: 0;}
+  table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+  th, td { border: 1px solid #ddd; padding: 10px; text-align: center; }
+  th { background: #2c3e50; color: #fff; }
+  tr:nth-child(even) { background: #f8f8f8; }
+  tr:hover { background: #eaeaea; }
+  img { border-radius: 12px; margin-top: 15px; }
+  footer { text-align: center; font-size: small; color: gray; margin-top: 40px; }
+  .info-grid { display: flex; flex-wrap: wrap; gap: 30px; justify-content: space-between; }
+  .info-card { flex: 1; min-width: 320px; }
+  .info-card > h2 { margin-top: 0; }
+  .info-list { list-style: none; padding: 0; margin: 0; }
+  .info-list li { background: #f4f4f4; margin-bottom: 8px; padding: 8px 12px; border-radius: 6px; }
+  .mapping-list { list-style: none; padding: 0; margin: 0; font-family: monospace; background: #fafafa; border: 1px solid #e0e0e0; border-radius: 8px; }
+  .mapping-list li { display: flex; justify-content: space-between; padding: 6px 12px; border-bottom: 1px solid #eee; }
+  .mapping-list li:last-child { border-bottom: none; }
+  .mapping-list .iris-code { font-weight: bold; color: #2c3e50; }
+  .mapping-list .arrow { color: #888; margin: 0 6px; }
+  .mapping-list .oc-id { color: #555; }
+  @media (max-width: 800px) { .info-grid { flex-direction: column; } }
+</style>
+</head>
+<body>
+
+<h1 style="text-align: center;">IRIS ↔ OpenCitations Mapping Report</h1>
+
+<section class="section info-grid">
+  <div class="info-card">
+    <h2>General Information</h2>
+    <ul class="info-list">
+      <li><strong>Date:</strong> {{ date }}</li>
+      <li><strong>IRIS data dump:</strong> {{ iris.source }}</li>
+      <li><strong>OC Meta data dump:</strong> {{ in_meta.source }}</li>
+      <li><strong>OC Index data dump:</strong> {{ in_index.source }}</li>
+    </ul>
+  </div>
+
+  <div class="info-card">
+    <h2>Type Validation</h2>
+    <ul class="info-list">
+      <li><strong>Valid ISBN types:</strong> {{ iris.valid_isbn_types }}</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <h2>IRIS Dataset Overview</h2>
+  <div>
+    {{ iris.sankey_plot | safe }}
+  </div>
+  <div class="stats">
+    <div class="stat-card">
+      <div class="value">{{ iris.record_count | comma }}</div>
+      <div>Total Records</div>
+    </div>
+    <div class="stat-card">
+      <div class="value">{{ iris.with_pids | comma }}</div>
+      <div>Records with PIDs</div>
+    </div>
+    <div class="stat-card">
+      <div class="value">{{ iris.found_pids | comma }}</div>
+      <div>PIDs found</div>
+    </div>
+    <div class="stat-card">
+      <div class="value">{{ iris.valid_pids | comma }}</div>
+      <div>Valid PIDs</div>
+    </div>
+  </div>
+
+  <h3>Internal ITEM_ID Validation Failures</h3>
+  <p>Failures: {{ iris.invalid_identifier_rows | length }}</p>
+  {% if iris.invalid_identifier_rows | length > 0 %}
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Failure Case</th>
+          <th>Source File</th>
+          <th>File row index</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for f in iris.invalid_identifier_rows %}
+        <tr>
+          <td>{{ f.failure_case }}</td>
+          <td>{{ f.source_file }}</td>
+          <td>{{ f.index }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% endif %}
+
+  <h3>IRIS records without PIDs</h3>
+  <p>Total records without any DOI, PMID or ISBN: <strong>{{ iris.without_pids | comma }}</strong> ({{ iris.without_pids_percentage }}% of total IRIS records)</p>
+  <p> Breakdown by publication type:</p>
+  <div class="table-container">
+    {{ iris_no_pid.types_coverage | safe }}
+  </div>
+
+
+  <h3>Invalid and misassigned Persistent Identifiers</h3>
+  <p>Invalid identifiers presenting formatting issues: {{ (iris.invalid_dois + iris.invalid_pmids + iris.invalid_isbns) | comma }}</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Count</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Invalid DOIs</td>
+        <td>{{ iris.invalid_dois | comma }}</td>
+      </tr>
+      <tr>
+        <td>Invalid PMIDs</td>
+        <td>{{ iris.invalid_pmids | comma }}</td>
+      </tr>
+      <tr>
+        <td>Invalid ISBNs</td>
+        <td>{{ iris.invalid_isbns | comma }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>Identifiers associated to a record of an invalid type: {{ (iris.misassigned_dois + iris.misassigned_pmids + iris.misassigned_isbns) | comma }}</p>
+  <table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Misassigned DOIs</td>
+      <td>{{ iris.misassigned_dois | comma }}</td>
+    </tr>
+    <tr>
+      <td>Misassigned PMIDs</td>
+      <td>{{ iris.misassigned_pmids | comma }}</td>
+    </tr>
+    <tr>
+      <td>Misassigned ISBNs</td>
+      <td>{{ iris.misassigned_isbns | comma }}</td>
+    </tr>
+  </tbody>
+</table>
+
+  <h3>Publication Year Distribution</h3>
+  <div>
+    {{ iris.temporal_distribution | safe }}
+  </div>
+  <p>Invalid years:</p>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>Count</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for f in iris.implausible_years %}
+        <tr>
+          <td>{{ f.DATE_ISSUED_YEAR }}</td>
+          <td>{{ f.len | comma }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="section">
+  <h2>IRIS in OpenCitations Meta</h2>
+  <p>Cutoff year applied: {{ in_meta.cutoff_year }}</p>
+  <p>Records found in OC Meta: <strong>{{ in_meta.record_count | comma }}</strong></p>
+  <div style="display: flex; gap: 20px; flex-wrap: wrap; align-items: flex-start;">
+    <div style="min-width: 30vw; max-width: 100%; display: flex; justify-content: center; align-items: center;">
+      {{ in_meta.coverage_plot | safe }}
+    </div>
+    <div style="flex: 1; min-width: 300px;">
+      <h3 style="margin-top: 0;">Publication Type Coverage</h3>
+      <div class="table-container" style="max-height: 450px;">
+        {{ in_meta.types_coverage | safe }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>IRIS Records <i>not found</i> in OC meta</h2>
+  <p>Total IRIS records with PIDs not found in OC Meta: <strong>{{ not_in_meta.record_count | comma }}</strong></p>
+  <p> Breakdown by publication type:</p>
+  <div class="table-container">
+    {{ not_in_meta.types_coverage | safe }}
+  </div>
+</section>
+
+{% if in_index.record_count > 0 %}
+<section class="section">
+  <h2>IRIS in OpenCitations Index</h2>
+  <p>Cutoff year applied: {{ in_meta.cutoff_year }}</p>
+  <p>Total number of citations involving IRIS publications: <strong>{{ in_index.record_count | comma }}</strong></p>
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Role</th>
+          <th>Citation count</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>IRIS records as <strong>citing</strong> entity</td>
+          <td>{{ in_index.citing_count | comma }}</td>
+        </tr>
+        <tr>
+          <td>IRIS records as <strong>cited</strong> entity</td>
+          <td>{{ in_index.cited_count | comma }}</td>
+        </tr>
+        <tr>
+          <td>Citations <strong>between IRIS</strong> publications</td>
+          <td>{{ in_index.both_iris_citations | comma }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endif %}
+
+<footer>
+  <p>This report was generated by <a href="https://github.com/opencitations/iris-oc-mapper">IRIS-OC Mapper</a>, version {{ version }}.</p>
+</footer>
+
+</body>
+</html>

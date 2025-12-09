@@ -1,0 +1,44 @@
+IRIS_TYPE_NAME,MIUR_TYPE_NAME
+01.01 - Articolo in rivista,Articolo in rivista
+01.02 - Recensione in rivista,Recensione in rivista
+01.03 - Scheda bibliografica,Scheda bibliografica
+01.04 - Nota a sentenza,Nota a sentenza
+01.05 - Abstract in rivista,Abstract in rivista
+01.06 - Traduzione in rivista,Traduzione in rivista
+02.01 - Contributo in volume (Capitolo o Saggio),Contributo in volume (Capitolo o Saggio)
+02.02 - Postfazione/Prefazione,Prefazione/Postfazione
+02.03 - Breve introduzione,Breve introduzione
+02.04 - Voce (in dizionario o enciclopedia),Voce (in dizionario o enciclopedia)
+02.05 - Traduzione in volume,Traduzione in volume
+02.06 - Recensione in volume,Recensione in volume
+"02.07 - Schede di catalogo, repertorio o corpora",Schede di catalogo/repertorio o corpus
+03.01 - Monografia o trattato scientifico,Monografia o trattato scientifico
+03.02 - Concordanza,Concordanza
+03.03 - Indice,Indice
+03.04 - Bibliografia,Bibliografia
+03.05 - Edizione critica di testi/di scavo,Edizione critica di testi/di scavo
+03.06 - Pubblicazioni di fonti inedite,Pubblicazione di fonti inedite
+03.07 - Commento scientifico,Commento scientifico
+03.08 - Traduzione di libro,Traduzione di libro
+04.01 - Contributo in atti di convegno,Contributo in Atti di convegno
+04.02 - Abstract in atti di convegno,Abstract in Atti di convegno
+04.03 - Poster,Poster
+05.01 - Brevetto,Brevetto
+06.01 - Curatela,Curatela
+07.01 - Composizione,Composizione
+07.02 - Disegno,Disegno
+07.03 - Design,Design
+07.04 - Performance,Performance
+07.05 - Esposizione,Esposizione
+07.06 - Mostra,Mostra
+07.07 - Manufatto,Manufatto
+07.08 - Prototipo d'arte e relativi progetti,Prototipo d'arte e relativi progetti
+07.09 - Cartografia,Cartografia
+07.10 - Banche dati,Banca dati
+07.11 - Software,Software
+07.12 - Altro,Altro
+07.13 - Progetto architettonico,Progetto Architettonico
+08.02 - Altre Tesi di Dottorato,Altro
+08.01 - Tesi di Dottorato UNIPD (Deposito Legale),Altro
+09.01 - Working Paper,Altro
+10.01 - Rapporto tecnico,Altro

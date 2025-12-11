@@ -137,20 +137,6 @@ def map(
         ),
         callback=get_datasets_to_save,
     ),
-    types: bool = typer.Option(
-        False,
-        "-t",
-        "--types",
-        help="To specify in case the IRIS input files includes the file 'ITEM_TYPE' that must be considered in the mapping process",
-    ),
-    miur_map_file: Path | None = typer.Option(
-        None,
-        "-mm",
-        "--miur-map",
-        exists=True,
-        readable=True,
-        help="Path to MIUR type mapping file.",
-    ),
     generate_report: bool = typer.Option(True, "--generate-report", "-r", help="Generate a mapping report."),
     cutoff_year: int | None = typer.Option(None, "--cutoff", "-c", help="Cutoff year for publications (inclusive)."),
     batch_size: int | None = typer.Option(
@@ -194,7 +180,6 @@ def map(
     typer.echo(f" 📦 OC Index dump:         {index_path.absolute() if index_path else 'N/A'}")
     typer.echo(f" 📂 Output directory:      {output_dir.absolute()}")
     typer.echo(f" 📄 Output format:         {output_format.upper()}")
-    # typer.echo(f" 🧭 MIUR type mapping file: {miur_map_file.absolute() if miur_map_file else 'None'}")
 
     if cutoff_year:
         typer.echo(f" ⏳ Cutoff year:           {cutoff_year}")

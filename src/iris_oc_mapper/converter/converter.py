@@ -288,11 +288,19 @@ class IRISConverter(object):
 
     def convertData(self):
         self.__l.info("Start the conversion process")
-        self.processDescription()
-        self.processIdentifier()
-        self.processLanguage()
-        self.processMasterAll()
-        self.processPerson()
-        self.processPublisher()
-        self.processRelation()
+        for step in [
+            self.processDescription,
+            self.processIdentifier,
+            self.processLanguage,
+            self.processMasterAll,
+            self.processPerson,
+            self.processPublisher,
+            self.processRelation
+        ]:
+            try:
+                step()
+            except Exception as e:
+                self.__l.error(f"{step.__name__} Failed: {e}", exc_info=False)
+
         self.__l.info("End the conversion process")
+

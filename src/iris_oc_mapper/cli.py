@@ -27,6 +27,31 @@ logger = logging.getLogger(__name__)
 app = typer.Typer(help="IRIS <-> OpenCitations Mapping CLI", no_args_is_help=True)
 
 
+def _version_callback(value: bool) -> None:
+    if not value:
+        return
+    try:
+        from iris_oc_mapper import __version__ as _pkg_version
+        typer.echo(_pkg_version)
+    except Exception:
+        typer.echo("unknown")
+    raise typer.Exit()
+
+
+@app.callback(invoke_without_command=True)
+def _app_callback(
+    version: bool = typer.Option(
+        None,
+        "--version",
+        "-V",
+        callback=_version_callback,
+        is_eager=True,
+        help="Show the application version and exit.",
+    )
+):
+    return
+
+
 class TyperLogHandler(logging.Handler):
     """Custom logging handler to route logs through Typer's echo."""
 

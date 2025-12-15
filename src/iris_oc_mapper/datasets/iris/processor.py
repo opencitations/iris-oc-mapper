@@ -57,14 +57,14 @@ class IRISProcessor:
                 # get first match only
                 logger.debug(f"Extracting first valid {prefix.upper()} per ITEM_ID using pattern.")
                 df_pid = df_pid.with_columns(
-                    (pl.col(column).str.extract(pattern).str.to_lowercase()).alias(f"extracted_{column}")
+                    (pl.col(column).str.strip_chars().str.extract(pattern).str.to_lowercase()).alias(f"extracted_{column}")
                 )
             else:
                 # get all matches in the string
                 # + format them in prefix:pid format
                 logger.debug(f"Extracting all valid {prefix.upper()}s per ITEM_ID using pattern.")
                 df_pid = df_pid.with_columns(
-                    pl.col(column).str.extract_all(pattern).alias(f"extracted_{column}")
+                    pl.col(column).str.strip_chars().str.extract_all(pattern).alias(f"extracted_{column}")
                 ).explode(f"extracted_{column}")
 
             if column == "IDE_ISBN":

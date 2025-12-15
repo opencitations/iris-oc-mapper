@@ -139,7 +139,7 @@ class IRISDataset:
             - {type_validation_column} (i64): Type of record.
             - PMID (str): Persistent identifier (PMID).
         """
-        pmid_pattern = r"(?:PMID:\s*)?0*([1-9][0-9]{0,8})"
+        pmid_pattern = r"^(?:PMID:?\s*)?(0*[1-9][0-9]{0,8})[^\d]?$"
 
         return self.processor.extract_pids(
             "IDE_PMID",

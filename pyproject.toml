@@ -1,6 +1,6 @@
 [project]
 name = "iris-oc-mapper"
-version = "1.0.2"
+version = "1.0.3"
 description = "A tool for mapping CINECA IRIS bibliographic records to OpenCitations Meta and Index datasets, with built-in utilities for interacting with IRIS data dumps."
 authors = [{ name = "Leonardo Zilli", email = "leonardo.zilli@studio.unibo.it" }]
 readme = "README.md"

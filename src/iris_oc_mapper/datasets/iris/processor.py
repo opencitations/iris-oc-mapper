@@ -87,6 +87,7 @@ class IRISProcessor:
             df_pid = df_pid.with_columns((prefix + ":" + pl.col(column)).alias(f"{column}_valid"))
 
         self.reporting_stats[f"found_{prefix}s"] = df_pid.height
+        logger.debug(f"Found {df_pid.height} {prefix.upper()}s from IRIS dataset.")
 
         invalid = df_pid.filter(pl.col(f"{column}_valid").is_null())
         self.reporting_stats[f"invalid_{prefix}s"] = invalid.height
@@ -111,6 +112,7 @@ class IRISProcessor:
                 logger.debug(
                     f"Found {len_before - valid.height} duplicate {prefix.upper()}s appearing multiple times in the same IRIS record."
                 )
+                logger.debug(f"Keeping only {valid.height} unique {prefix.upper()}s.")
 
         if valid_types:
             # remove pids with invalid types
@@ -120,6 +122,7 @@ class IRISProcessor:
             self.reporting_stats[f"misassigned_{prefix.lower()}s"] = len_before - valid.height
 
         self.reporting_stats[f"valid_{prefix}s"] = valid.height
+        logger.debug(f"Returning {valid.height} valid {prefix.upper()}s from IRIS dataset.")
         return valid.select(["ITEM_ID", type_validation_column, prefix.upper()])
 
     def get_publication_years(self) -> pl.DataFrame:

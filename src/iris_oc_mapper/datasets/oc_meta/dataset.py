@@ -89,7 +89,9 @@ class IRISInOCMetaDataset(IrisOCMapperDataset):
         logger.info("Fixing OC Meta duplicates...", extra={"cli_msg": " 🛠️  Fixing OC Meta duplicates..."})
 
         self.df = (
-            self.df.sort(["iris_id", "pub_date"], descending=[False, True]).group_by(["iris_id"]).agg(pl.all().first())
+            self.df.sort(["iris_id", "pub_date", "omid"], descending=[False, True, True])
+            .group_by(["iris_id"])
+            .agg(pl.all().first())
         )
 
         return self.df

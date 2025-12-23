@@ -17,6 +17,9 @@ authors:
   - given-names: Silvio
     family-names: Peroni
     orcid: 'https://orcid.org/0000-0003-0530-4305'
+  - given-names: Ivan
+    family-names: Heibi
+    orcid: 'https://orcid.org/0000-0001-5366-5194'
 repository-code: 'https://github.com/opencitations/iris-oc-mapper'
 abstract: >-
   iris-oc-mapper provides a command-line tool to search

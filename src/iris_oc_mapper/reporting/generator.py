@@ -214,6 +214,7 @@ def get_stats(datasets) -> dict:
             **iris_stats,
             "source": getattr(iris, "source", "N/A"),
             "valid_isbn_types": valid_isbn_types,
+            "cutoff_height": iris.df.filter(pl.col("DATE_ISSUED_YEAR") <= in_meta.cutoff_year).height if iris and in_meta else None,
             "sankey_plot": generate_iris_sankey(iris_stats) if iris else None,
             "temporal_distribution": generate_temporal_distribution(iris.read_csv_master()) if iris else None,
             "implausible_years": get_implausible_years(iris.read_csv_master()) if iris else None,

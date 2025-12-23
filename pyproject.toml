@@ -1,6 +1,6 @@
 [project]
 name = "iris-oc-mapper"
-version = "1.0.4"
+version = "1.0.5"
 description = "A tool for mapping CINECA IRIS bibliographic records to OpenCitations Meta and Index datasets, with built-in utilities for interacting with IRIS data dumps."
 authors = [{ name = "Leonardo Zilli", email = "leonardo.zilli@studio.unibo.it" }]
 readme = "README.md"
@@ -56,7 +56,7 @@ iris-oc-mapper = "iris_oc_mapper.cli:app"
 disable_error_code = ["import-untyped"]
 
 [tool.bumpver]
-current_version = "1.0.4"
+current_version = "1.0.5"
 version_pattern = "MAJOR.MINOR.PATCH"
 commit_message = "bump version {old_version} -> {new_version}"
 tag_message = "{new_version}"

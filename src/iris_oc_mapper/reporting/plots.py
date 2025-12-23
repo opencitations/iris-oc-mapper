@@ -169,16 +169,19 @@ def generate_temporal_distribution(df: pl.DataFrame) -> str:
 
 
 def generate_coverage_plot(in_meta, iris, no_pid) -> str:
-    iris_in_meta = in_meta.df.height
-    iris_not_in_meta = iris.df.height - iris_in_meta
-    total = iris.df.height
-
-    # perc_in_meta = iris_in_meta / total * 100
+    cutoff_year = getattr(in_meta, "cutoff_year", None)
+    if cutoff_year:
+        total = iris.df.filter(pl.col("DATE_ISSUED_YEAR") <= cutoff_year).height
+        no_pid.df = no_pid.df.filter(pl.col("DATE_ISSUED_YEAR") <= cutoff_year)
+    else:
+        total = iris.df.height
+    
+    iris_not_in_meta = total - in_meta.df.height
     perc_not_in_meta = iris_not_in_meta / total * 100
 
     data = {
         "Category": ["In OC", "Not in OC"],
-        "Count": [iris_in_meta, iris_not_in_meta],
+        "Count": [in_meta.df.height, iris_not_in_meta],
     }
 
     df = pl.DataFrame(data)
@@ -226,7 +229,7 @@ def generate_coverage_plot(in_meta, iris, no_pid) -> str:
     )
 
     fig.add_annotation(
-        text=f"<b>{iris_in_meta / total:.1%}</b><br>"
+        text=f"<b>{in_meta.df.height / total:.1%}</b><br>"
         f"<span style='font-size:14px;color:#666;'>"
         f"coverage in OC Meta</span>",
         x=0.5,

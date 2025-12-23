@@ -100,7 +100,6 @@ iris-oc-mapper map \
   --cutoff 2024 \
   -s "in_meta, in_index, not_in_meta, no_pid" \
   --output results/ \
-
 ```
 
 ### Configuration
@@ -144,9 +143,13 @@ Then pass your configuration file using the `--config` option when running the `
 A YAML configuration file can be provided to override default settings for the mapping process. This file can specify parameters such as valid PID types and batch sizes for processing.
 An example configuration file is available in the `resources/` directory.
 
+
+## Mapping workflow
+A document describing the mapping workflow is available at [`docs/mapping_workflow.md`](docs/mapping_workflow.md)
+
 ## Performance Considerations
 Mapping large IRIS dumps against OpenCitations datasets can be resource-intensive.
-For a full mapping, at least 5 GB of available RAM space is recommended. The full mapping process takes approximately 15 minutes to complete.
+For a full mapping, at least 5 GB of available RAM is recommended. The full mapping process takes approximately 15 minutes to complete.
 
 You can optimize resource usage by:
 * Adjusting the `--batch-size` option to control the number of files processed in each batch during the OC Meta mapping.

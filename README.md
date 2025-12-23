@@ -177,5 +177,5 @@ The authors would also like to express their gratitude to the collaborators and 
 ## Citation
 
 ```
-tba
+Zilli, L., Andreose, E., Peroni, S., & Heibi, I. (2025). iris-oc-mapper (Version 1.0.0) [Computer software]. https://github.com/opencitations/iris-oc-mapper
 ```
